@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablia.ai - Estrategia de Crecimiento Personalizada</title>
+  <meta property="og:title" content="Tablia.ai - Estrategia de Crecimiento Personalizada">
+  <meta property="og:description" content="Una auditoría y estrategia de crecimiento construida específicamente para Tablia.ai por Copy Estratega.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png">
+  <meta property="og:url" content="https://danigdecelis.github.io/tablia-strategy/">
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/gpt-engineer-file-uploads/ENnY1cQr8yb82cqirDaLRejSItf1/uploads/1759866240739-LeadLinker%20Logo%20Favicon%20.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-dark: #A8893A;
+      --gold-light: rgba(201,168,76,0.08);
+      --gold-border: rgba(201,168,76,0.2);
+      --dark: #0A0A0A;
+      --dark-mid: #1A1A1A;
+      --body-text: #555555;
+      --muted: #999999;
+      --off-white: #F8F6F0;
+      --white: #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--dark-mid); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 0 40px;
+      height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo img { height: 48px; }
+    .nav-cta {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 10px 22px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--dark); }
+
+    /* CARDS */
+    .card {
+      padding: 80px 40px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .card-dark {
+      background: var(--dark);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .card-off { background: var(--off-white); }
+    .card-white { background: var(--white); }
+
+    .container { max-width: 800px; margin: 0 auto; }
+
+    /* TYPOGRAPHY */
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: block;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: clamp(32px, 5vw, 52px);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: clamp(26px, 4vw, 38px);
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+    }
+    h3 { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 20px; }
+    h4 { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 15px; }
+    p { font-size: 16px; line-height: 1.75; }
+
+    .on-dark h1, .on-dark h2, .on-dark h3 { color: var(--white); }
+    .on-dark p { color: rgba(255,255,255,0.7); }
+    .on-light h1, .on-light h2, .on-light h3 { color: var(--dark-mid); }
+    .on-light p { color: var(--body-text); }
+
+    /* HERO */
+    .hero-alert {
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      padding: 18px 40px;
+      border-radius: 4px;
+      margin-bottom: 48px;
+    }
+    .hero-title { color: var(--white); margin-bottom: 16px; }
+    .hero-sub { color: rgba(255,255,255,0.65); font-size: 17px; }
+
+    /* TOC */
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .toc-item {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid var(--gold-border);
+      border-radius: 6px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .toc-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .toc-title { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .toc-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+
+    /* AUDIT INTRO */
+    .audit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .audit-who h3 { color: var(--dark-mid); margin-bottom: 12px; }
+    .audit-who p { color: var(--body-text); margin-bottom: 16px; font-size: 15px; }
+    .photo-row { display: flex; align-items: center; gap: 16px; margin-top: 24px; }
+    .photo-row img { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--gold); object-fit: cover; }
+    .photo-info h4 { font-size: 15px; color: var(--dark-mid); }
+    .photo-info p { font-size: 13px; color: var(--muted); margin: 0; }
+    .audit-how {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 10px;
+      padding: 28px;
+    }
+    .audit-how h4 { color: var(--dark-mid); margin-bottom: 10px; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .audit-how p { font-size: 14px; color: var(--body-text); line-height: 1.65; }
+
+    /* FINDING CARDS */
+    .findings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .finding-card {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 10px;
+      padding: 22px;
+      border-left: 3px solid var(--gold);
+    }
+    .finding-card h4 { color: var(--dark-mid); margin-bottom: 6px; }
+    .finding-card p { font-size: 14px; color: var(--body-text); line-height: 1.6; }
+    .finding-url {
+      font-size: 12px;
+      color: var(--gold);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      margin-bottom: 20px;
+      display: block;
+      word-break: break-all;
+    }
+
+    /* TECH STACK */
+    .tech-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .tech-row:last-child { border-bottom: none; }
+    .tech-label { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; color: var(--gold); width: 160px; flex-shrink: 0; }
+    .tech-value { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.5; }
+
+    /* TRANSITION DIVIDER */
+    .transition-divider { text-align: center; }
+    .transition-divider .badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 10px 28px;
+      border-radius: 4px;
+      margin-bottom: 24px;
+    }
+    .transition-divider h2 { color: var(--white); margin-bottom: 12px; }
+    .transition-divider p { color: rgba(255,255,255,0.6); max-width: 520px; margin: 0 auto; }
+
+    /* PROBLEMS */
+    .problem-body { font-size: 16px; color: var(--body-text); margin-bottom: 28px; max-width: 680px; }
+    .journey { margin-top: 28px; }
+    .journey-title { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+    .journey-steps { display: flex; flex-direction: column; gap: 0; }
+    .journey-step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      position: relative;
+    }
+    .journey-step:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 19px; top: 38px;
+      width: 2px; height: calc(100% - 20px);
+      background: var(--gold-border);
+    }
+    .step-circle {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      background: var(--dark);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px; font-weight: 800;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .step-content h4 { font-size: 14px; color: var(--dark-mid); margin-bottom: 4px; }
+    .step-content p { font-size: 14px; color: var(--body-text); margin: 0; line-height: 1.5; }
+    .problem-closing {
+      margin-top: 24px;
+      padding: 16px 20px;
+      background: rgba(201,168,76,0.08);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--dark-mid);
+    }
+
+    /* SUPPORT POINTS */
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .support-item {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .support-item h4 { font-size: 14px; color: var(--dark-mid); margin-bottom: 6px; }
+    .support-item p { font-size: 13px; color: var(--body-text); line-height: 1.55; margin: 0; }
+
+    /* NUMBERS */
+    .numbers-intro { color: rgba(255,255,255,0.7); margin-bottom: 40px; max-width: 600px; }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .stat-block {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 10px;
+      padding: 28px;
+    }
+    .stat-big {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label { font-size: 13px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .stat-desc { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.55; margin: 0; }
+    .numbers-closing {
+      padding: 20px 24px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid var(--gold-border);
+      border-radius: 8px;
+      font-size: 15px;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* LEAD MAGNETS */
+    .lm-list { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+    .lm-item {
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 10px;
+      padding: 22px 24px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .lm-item.featured {
+      background: var(--gold-light);
+      border-color: var(--gold);
+    }
+    .lm-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 32px;
+    }
+    .lm-content h4 { font-size: 15px; color: var(--dark-mid); margin-bottom: 6px; }
+    .lm-content p { font-size: 14px; color: var(--body-text); line-height: 1.6; margin: 0; }
+    .lm-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    /* EXAMPLE PAGE PREVIEW */
+    .preview-wrap {
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 28px;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .preview-wrap:hover {
+      border-color: var(--gold);
+      box-shadow: 0 8px 32px rgba(201,168,76,0.15);
+      transform: translateY(-4px);
+    }
+    .preview-hero {
+      background: #003D33;
+      padding: 32px 36px;
+    }
+    .preview-badge {
+      display: inline-block;
+      background: rgba(34,136,38,0.2);
+      border: 1px solid rgba(34,136,38,0.4);
+      color: #6eca71;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+    .preview-headline {
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .preview-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 20px;
+    }
+    .preview-stats {
+      display: flex;
+      gap: 24px;
+    }
+    .preview-stat .num { font-size: 24px; font-weight: 700; color: #6eca71; }
+    .preview-stat .lbl { font-size: 11px; color: rgba(255,255,255,0.5); }
+    .preview-btn-row {
+      margin-top: 16px;
+    }
+    .preview-cta {
+      display: inline-block;
+      background: #228826;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 8px;
+    }
+    .preview-bar {
+      background: var(--off-white);
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .preview-url { font-size: 12px; color: var(--muted); font-family: monospace; }
+    .preview-view { font-size: 13px; font-weight: 700; color: var(--gold); }
+    .what-changed {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .wc-block h4 { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+    .wc-block ul { list-style: none; }
+    .wc-block li { font-size: 14px; color: var(--body-text); padding: 4px 0; display: flex; gap: 8px; align-items: flex-start; }
+    .wc-block.after li::before { content: '✓'; color: var(--gold); font-weight: 700; }
+    .wc-block.before li::before { content: '→'; color: var(--muted); }
+
+    /* WHAT ELSE */
+    .build-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .build-item {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .build-item h4 { font-size: 15px; color: var(--dark-mid); margin-bottom: 12px; }
+    .build-item ul { list-style: none; }
+    .build-item li {
+      font-size: 13px;
+      color: var(--body-text);
+      padding: 4px 0;
+      display: flex;
+      gap: 8px;
+      line-height: 1.5;
+    }
+    .build-item li::before { content: '·'; color: var(--gold); font-weight: 700; }
+    .email-sequence { margin-top: 28px; }
+    .email-sequence h4 { font-size: 15px; color: var(--dark-mid); margin-bottom: 16px; }
+    .email-item {
+      display: flex;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      align-items: flex-start;
+    }
+    .email-num {
+      width: 28px; height: 28px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 800; color: var(--dark);
+      flex-shrink: 0;
+    }
+    .email-item p { font-size: 14px; color: var(--body-text); margin: 0; line-height: 1.5; }
+    .email-item strong { color: var(--dark-mid); }
+
+    /* GUARANTEE */
+    .guarantee-statement {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(20px, 3vw, 26px);
+      color: var(--white);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+    .guarantee-steps { display: flex; flex-direction: column; gap: 0; }
+    .g-step {
+      display: flex;
+      gap: 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      align-items: flex-start;
+    }
+    .g-step:last-child { border-bottom: none; }
+    .g-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      width: 40px;
+      flex-shrink: 0;
+    }
+    .g-who {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .g-title { font-size: 17px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .g-desc { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0; }
+
+    /* CTA SECTIONS */
+    .cta-section { background: var(--dark); border-top: 1px solid rgba(201,168,76,0.3); text-align: center; }
+    .cta-section h2 { color: var(--white); margin-bottom: 12px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .cta-section .cta-sub { color: rgba(255,255,255,0.55); margin-bottom: 40px; }
+    .cta-options { display: flex; flex-direction: column; gap: 20px; align-items: center; }
+    .cta-email-block { font-size: 17px; color: rgba(255,255,255,0.7); }
+    .cta-email-block strong { color: var(--white); }
+    .cta-or { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+    .btn-calendly {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-calendly:hover { background: var(--gold); color: var(--dark); }
+
+    /* FAQS */
+    .faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+    .faq-q { font-size: 15px; font-weight: 700; color: var(--dark-mid); margin-bottom: 8px; }
+    .faq-a { font-size: 14px; color: var(--body-text); line-height: 1.65; margin: 0; }
+
+    /* ABOUT */
+    .about-card {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 10px;
+      padding: 32px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      margin-top: 28px;
+    }
+    .about-card img { width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--gold); object-fit: cover; flex-shrink: 0; }
+    .about-name { font-size: 18px; font-weight: 700; color: var(--dark-mid); margin-bottom: 2px; }
+    .about-title { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+    .about-bio { font-size: 14px; color: var(--body-text); line-height: 1.65; margin: 0; }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      padding: 40px;
+      text-align: center;
+    }
+    footer img { height: 36px; margin-bottom: 16px; }
+    footer p { font-size: 13px; color: rgba(255,255,255,0.4); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .card { padding: 60px 24px; }
+      .audit-grid { grid-template-columns: 1fr; }
+      .findings-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .what-changed { grid-template-columns: 1fr; }
+      .preview-stats { flex-direction: column; gap: 12px; }
+      .about-card { flex-direction: column; }
+      footer { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#"><img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega"></a>
+    <button class="nav-cta" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">Reserva una llamada</button>
+  </nav>
+
+  <!-- CARD 1: TITLE -->
+  <div class="card card-dark" style="padding-top: 128px; text-align: center;">
+    <div class="container">
+      <span class="section-label">Estrategia personalizada</span>
+      <h1 class="hero-title">Tablia.ai</h1>
+      <p class="hero-sub" style="margin-top: 12px; max-width: 560px; margin-left: auto; margin-right: auto;">Estrategia de crecimiento construida específicamente para Tablia. Cada hallazgo, cada recomendación y cada ejemplo está basado en tu web real y tu funnel actual.</p>
+    </div>
+  </div>
+
+  <!-- CARD 2: INTRO -->
+  <div class="card card-white on-light">
+    <div class="container">
+      <p style="font-size: 19px; color: var(--body-text); line-height: 1.7; max-width: 680px;">Este documento fue construido específicamente para <strong style="color: var(--dark-mid);">Tablia.ai</strong>. Cada hallazgo, cada recomendación y cada ejemplo está basado en tu web real, tu presencia en LinkedIn y tu funnel actual.</p>
+    </div>
+  </div>
+
+  <!-- CARD 3: WHAT'S INSIDE -->
+  <div class="card card-dark on-dark">
+    <div class="container">
+      <span class="section-label">Lo que contiene</span>
+      <h2 style="color: var(--white); margin-bottom: 8px;">Lo que hay dentro</h2>
+      <div class="toc-grid">
+        <div class="toc-item">
+          <div class="toc-num">01</div>
+          <div><div class="toc-title">La Auditoría</div><div class="toc-desc">Lo que encontramos en tu LinkedIn, web y stack técnico</div></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">02</div>
+          <div><div class="toc-title">Los Problemas</div><div class="toc-desc">Lo que te está costando leads ahora mismo</div></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">03</div>
+          <div><div class="toc-title">Los Números</div><div class="toc-desc">Lo que esa fuga cuesta cada mes</div></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">04</div>
+          <div><div class="toc-title">Lead Magnets Sugeridos</div><div class="toc-desc">Ideas concretas para capturar emails y construir pipeline</div></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">05</div>
+          <div><div class="toc-title">La Página de Ejemplo</div><div class="toc-desc">Una versión ya construida de tu página de captación</div></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">06</div>
+          <div><div class="toc-title">Qué Más Construiríamos</div><div class="toc-desc">El funnel completo detrás de la página</div></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">07</div>
+          <div><div class="toc-title">Oferta y Garantía</div><div class="toc-desc">Cómo garantizamos resultados</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4: AUDIT INTRO -->
+  <div class="card card-off on-light">
+    <div class="container">
+      <span class="section-label">La Auditoría</span>
+      <h2>Hola Paolo, me llamo Daniel</h2>
+      <div class="audit-grid">
+        <div class="audit-who">
+          <h3>Quiénes somos</h3>
+          <p>Soy el fundador de Copy Estratega. Trabajamos con fundadores y empresas de producto que ya tienen resultados demostrados, pero todavía no tienen el sistema digital que convierte ese trabajo en clientes nuevos de forma predecible.</p>
+          <p>Construimos el sistema completo: página de captación, lead magnet, secuencia de nurturing y contenido de autoridad. Todo hecho para ti, todo listo para lanzar.</p>
+          <div class="photo-row">
+            <img src="https://danigdecelis.github.io/factor-rh-strategy/daniel-photo.png" alt="Daniel Garcia de Celis">
+            <div class="photo-info">
+              <h4>Daniel Garcia de Celis</h4>
+              <p>Fundador, Copy Estratega</p>
+            </div>
+          </div>
+        </div>
+        <div class="audit-how">
+          <h4>Cómo te encontré</h4>
+          <p>Encontré Tablia.ai en LinkedIn y en la web. Después de investigar un poco encontré algunos hallazgos que creo que vale la pena compartir contigo. Vi una brecha importante entre la autoridad que tienes como fundador y lo que el visitante de tablia.ai encuentra cuando llega.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 5: LINKEDIN -->
+  <div class="card card-white on-light">
+    <div class="container">
+      <span class="section-label">Paso 1</span>
+      <h2>Tu LinkedIn</h2>
+      <a href="https://www.linkedin.com/in/paolorizzi/" class="finding-url" target="_blank">linkedin.com/in/paolorizzi/</a>
+      <p style="color: var(--body-text); margin-bottom: 24px;">Lo que encontré:</p>
+      <div class="findings-grid">
+        <div class="finding-card">
+          <h4>Trayectoria de primer nivel</h4>
+          <p>Cofundador y CTO de minu, fintech que captó más de 20 millones de dólares y fue seleccionada por Endeavor. Más de 20 años construyendo producto en Europa y América. Un perfil que genera confianza de inmediato.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Reconocimiento sectorial</h4>
+          <p>Miembro del Global CTO Forum y con aparición en el podcast fintech NOW. Tienes autoridad pública construida en el ecosistema, pero esos credenciales no aparecen en la web del producto que estás vendiendo ahora.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Historial de ejecución probado</h4>
+          <p>Llegaste a México en 2012 para aplicar machine learning en prevención de fraude bancario. Exactamente el tipo de profundidad técnica que genera confianza en clientes de contabilidad. No aparece en ningún sitio de Tablia.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Perfil activo y actualizado</h4>
+          <p>Tu LinkedIn está actualizado y refleja bien tu trayectoria. El problema es que los que llegan directamente a tablia.ai no tienen acceso a esa misma historia. Son dos mundos desconectados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 6: WEBSITE -->
+  <div class="card card-off on-light">
+    <div class="container">
+      <span class="section-label">Paso 2</span>
+      <h2>Tu Web</h2>
+      <a href="https://tablia.ai" class="finding-url" target="_blank">tablia.ai</a>
+      <a href="https://blog.tablia.ai" class="finding-url" style="margin-top: -12px;" target="_blank">blog.tablia.ai</a>
+      <p style="color: var(--body-text); margin-bottom: 24px;">Lo que está funcionando:</p>
+      <div class="findings-grid">
+        <div class="finding-card">
+          <h4>Especialización en el ecosistema mexicano</h4>
+          <p>Tablia está construida específicamente para el SAT y el CFDI. Eso te diferencia de herramientas globales genéricas como QuickBooks o Xero que no hablan el idioma fiscal de México.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Herramientas gratuitas como puerta de entrada</h4>
+          <p>El validador de CFDI y el validador de CSD son puntos de entrada inteligentes. Tráfico ya cualificado que llega con el problema que Tablia resuelve.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Segmentación clara de audiencias</h4>
+          <p>Despacho Contable, Empresa y CFO: reconocer que estos tres perfiles tienen necesidades diferentes y tratarlos por separado es lo correcto.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Blog activo con potencial SEO real</h4>
+          <p>Paquete Económico 2026, cambios fiscales, nómina, errores de facturación. Contenido que los contadores mexicanos buscan activamente. El blog genera tráfico cualificado que actualmente no tiene a dónde ir.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Promesa cuantificada y creíble</h4>
+          <p>"80% de reducción en el tiempo de cierre mensual" es una promesa concreta y verificable. No es el típico "ahorra tiempo" genérico. Eso convierte, cuando se ve.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 7: ADS + TECH -->
+  <div class="card card-dark on-dark">
+    <div class="container">
+      <span class="section-label">Paso 3</span>
+      <h2 style="color: var(--white); margin-bottom: 32px;">Tu Stack Técnico y Anuncios</h2>
+      <div class="tech-row">
+        <div class="tech-label">Google Ads</div>
+        <div class="tech-value">Sin anuncios activos detectados en Google Ads Transparency. Todo el tráfico actual es orgánico o directo.</div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-label">Píxeles</div>
+        <div class="tech-value">Sin píxeles de Meta, Google Analytics o GTM detectados en el código fuente. No hay retargeting activo ni medición de conversiones configurada.</div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-label">Email Marketing</div>
+        <div class="tech-value">Sin plataforma de email detectada. Mailchimp, Klaviyo, ActiveCampaign, HubSpot: ninguna visible en el código fuente de la página.</div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-label">Sistema de captación</div>
+        <div class="tech-value">El único CTA en toda la web es "Crea una cuenta". Sin formulario de captación de emails, sin lead magnet, sin secuencia de nurturing. El visitante que llega y no está listo para registrarse no tiene ninguna otra opción.</div>
+      </div>
+      <div class="tech-row">
+        <div class="tech-label">CMS / Stack</div>
+        <div class="tech-value">Web propia con diseño a medida. Alojada en Mérida, Yucatán. App separada en app.tablia.ai.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 8: TRANSITION -->
+  <div class="card card-dark on-dark" style="text-align: center; padding: 60px 40px;">
+    <div class="container transition-divider">
+      <div class="badge">Auditoría completa</div>
+      <h2>Los Problemas</h2>
+      <p>Ahora que sabemos qué hay, esto es lo que esos hallazgos revelan sobre lo que te está costando leads ahora mismo.</p>
+    </div>
+  </div>
+
+  <!-- CARD 9: PROBLEM 1 -->
+  <div class="card card-white on-light">
+    <div class="container">
+      <span class="section-label">Problema 1</span>
+      <h2>Tu autoridad más valiosa es invisible donde más importa</h2>
+      <p class="problem-body">Paolo, tienes un perfil fundacional que muy pocos fundadores de SaaS en México pueden igualar: minu, Endeavor, banca, más de dos décadas construyendo producto técnico a alto nivel. Eso genera confianza de forma inmediata. Pero cuando un contador o el dueño de un despacho llega a tablia.ai, no ve nada de eso. Ve un producto SaaS sin historia detrás. La decisión de adoptar una herramienta de contabilidad requiere confianza. Y la confianza se construye con personas, no con logos.</p>
+      <div class="journey">
+        <div class="journey-title">El recorrido del comprador hoy:</div>
+        <div class="journey-steps">
+          <div class="journey-step">
+            <div class="step-circle">1</div>
+            <div class="step-content">
+              <h4>Descubre Tablia</h4>
+              <p>Alguien llega desde una búsqueda sobre SAT o CFDI, o por recomendación de un colega.</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="step-circle">2</div>
+            <div class="step-content">
+              <h4>Explora la web</h4>
+              <p>Lee las funcionalidades, ve la promesa del 80% de reducción de tiempo. Le interesa.</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="step-circle">3</div>
+            <div class="step-content">
+              <h4>Busca quién hay detrás</h4>
+              <p>No encuentra ninguna historia del fundador, ningún caso de éxito con nombre, ninguna credencial de autoridad visible.</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="step-circle">4</div>
+            <div class="step-content">
+              <h4>Sale sin convertir</h4>
+              <p>El 80% de los visitantes con interés real no dan el siguiente paso. La confianza no alcanzó para completar el registro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="problem-closing">La herramienta puede ser perfecta técnicamente. Sin la historia del fundador, el visitante no tiene razón suficiente para confiar.</div>
+    </div>
+  </div>
+
+  <!-- CARD 10: PROBLEM 2 -->
+  <div class="card card-off on-light">
+    <div class="container">
+      <span class="section-label">Problema 2</span>
+      <h2>El mejor argumento de venta está enterrado donde nadie lo ve</h2>
+      <p class="problem-body">Tienes un caso de éxito que cierra ventas solo: un despacho contable que pasó de 25 horas a 3 horas en su proceso de cierre mensual, con un 99,2% de precisión. Un argumento irrefutable. Está en el blog. Un visitante que llega a tablia.ai no lo ve jamás a menos que llegue exactamente a ese artículo.</p>
+      <div class="support-grid">
+        <div class="support-item">
+          <h4>El dato enterrado en el blog</h4>
+          <p>El caso 25h a 3h es exactamente lo que un contador necesita escuchar para tomar la decisión. No está en la homepage, no está en la página del plan Contadores, no está en el onboarding.</p>
+        </div>
+        <div class="support-item">
+          <h4>La homepage sin prueba de resultados</h4>
+          <p>El CTA principal es "Crea una cuenta". No hay ningún paso intermedio de credibilidad entre llegar al sitio y crear la cuenta. Para el visitante frío, ese salto es demasiado grande.</p>
+        </div>
+        <div class="support-item">
+          <h4>Sin diferenciación basada en resultados reales</h4>
+          <p>Los competidores también dicen que ahorran tiempo. El caso 25h a 3h te diferencia de todos ellos. Pero solo diferencia si se ve, y actualmente no se ve.</p>
+        </div>
+      </div>
+      <div class="problem-closing">Un caso de éxito de esa magnitud que solo lee el que llega al artículo correcto no está trabajando para ti.</div>
+    </div>
+  </div>
+
+  <!-- CARD 11: PROBLEM 3 -->
+  <div class="card card-white on-light">
+    <div class="container">
+      <span class="section-label">Problema 3</span>
+      <h2>No existe ningún funnel dedicado para el segmento de mayor valor</h2>
+      <a href="https://blog.tablia.ai" class="finding-url" target="_blank">blog.tablia.ai</a>
+      <p class="problem-body">Los Despachos Contables son tu segmento premium: el que paga el plan más alto, el que tiene mayor LTV, el que puede escalar contigo porque gestiona varios clientes. Es exactamente el segmento para el que no existe ninguna página, ningún lead magnet y ninguna secuencia de captación específica.</p>
+      <div class="support-grid">
+        <div class="support-item">
+          <h4>Lo que debería existir y no existe</h4>
+          <p>Una landing page dedicada al segmento Contadores, con el caso 25h a 3h como pieza central y un lead magnet descargable pensado para el director del despacho.</p>
+        </div>
+        <div class="support-item">
+          <h4>El blog sin destino</h4>
+          <p>blog.tablia.ai genera tráfico orgánico cualificado de contadores en México. Ese tráfico llega y se va. Sin email gate, sin recurso descargable, sin forma de continuar la conversación.</p>
+        </div>
+        <div class="support-item">
+          <h4>Un solo CTA para tres perfiles distintos</h4>
+          <p>"Crea una cuenta" es el mismo mensaje para el dueño de PYME, el socio del despacho y el CFO de empresa grande. Ninguno siente que hablas directamente con él.</p>
+        </div>
+      </div>
+      <div class="problem-closing">El blog genera tráfico cualificado de contadores mexicanos. Ese tráfico no tiene a dónde ir excepto "Crea una cuenta". El que no está listo para eso se va para siempre.</div>
+    </div>
+  </div>
+
+  <!-- CARD 12: NUMBERS -->
+  <div class="card card-dark on-dark">
+    <div class="container">
+      <span class="section-label">Los Números</span>
+      <h2 style="color: var(--white); margin-bottom: 16px;">Lo que esa fuga cuesta cada mes</h2>
+      <p class="numbers-intro">En Tablia.ai, con suscripciones de entre $199 y $1,799 MXN al mes, incluso mejoras pequeñas en captación tienen impacto directo en los ingresos recurrentes. Todas las estimaciones son conservadoras.</p>
+      <div class="stats-grid">
+        <div class="stat-block">
+          <div class="stat-big">400+</div>
+          <div class="stat-label">Visitas mensuales al blog sin captura</div>
+          <p class="stat-desc">blog.tablia.ai genera tráfico orgánico cualificado. Sin email gate ni lead magnet, ese tráfico desaparece sin dejar rastro.</p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big">$32K</div>
+          <div class="stat-label">LTV de un solo Despacho Contable</div>
+          <p class="stat-desc">A $1,799 MXN/mes con una duración media de 18 meses, cada despacho captado vale más de $32,000 MXN en ingresos recurrentes.</p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big">0</div>
+          <div class="stat-label">Lead magnets para Despachos Contables</div>
+          <p class="stat-desc">El segmento de mayor valor no tiene ninguna pieza de contenido construida específicamente para capturar su interés antes de que esté listo para registrarse.</p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big">90d</div>
+          <div class="stat-label">Para generar pipeline cualificado constante</div>
+          <p class="stat-desc">Con el funnel activo, el blog deja de ser un callejón sin salida y se convierte en el primer paso de una secuencia que convierte mes a mes.</p>
+        </div>
+      </div>
+      <div class="numbers-closing">Un solo Despacho Contable captado al mes por el sistema genera mas de $21,000 MXN en ingresos recurrentes anuales. Eso cubre el coste completo del funnel antes de los 90 dias.</div>
+    </div>
+  </div>
+
+  <!-- CARD 13: LEAD MAGNETS -->
+  <div class="card card-off on-light">
+    <div class="container">
+      <span class="section-label">Lead Magnets Sugeridos</span>
+      <h2>Cinco ideas para Tablia.ai</h2>
+      <p style="color: var(--body-text); margin-top: 8px; margin-bottom: 8px;">Basadas en lo que Tablia ya tiene o puede crear fácilmente:</p>
+      <div class="lm-list">
+        <div class="lm-item featured">
+          <div class="lm-num">1</div>
+          <div class="lm-content">
+            <div class="lm-badge">Pagina de ejemplo</div>
+            <h4>"Guía del Despacho Contable Digital 2026: Cómo triplicar tu cartera sin contratar más personal"</h4>
+            <p>Guía práctica para directores y socios de despachos contables en México. Explica cómo la automatización del cierre mensual libera capacidad operativa para tomar más clientes sin ampliar el equipo. Usa el caso real de 25h a 3h como prueba central. Este es el lead magnet sobre el que está construida la página de ejemplo.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">2</div>
+          <div class="lm-content">
+            <h4>"Calculadora de tiempo perdido: ¿Cuántas horas pierde tu despacho al mes en tareas que ya están automatizadas?"</h4>
+            <p>Herramienta interactiva donde el contador introduce el número de clientes y el tiempo por tarea. El resultado muestra el tiempo recuperable y lo traduce en ingresos adicionales posibles.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">3</div>
+          <div class="lm-content">
+            <h4>"Checklist SAT 2026: Todo lo que necesitas tener en orden para cerrar el año fiscal sin contingencias"</h4>
+            <p>Recurso descargable para dueños de empresa y CFOs. Captura un perfil de cliente diferente al del despacho y amplía el funnel hacia el plan Empresa.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">4</div>
+          <div class="lm-content">
+            <h4>"Informe: Los 5 errores fiscales más costosos que cometen los empresarios mexicanos"</h4>
+            <p>Basado en el artículo ya publicado en el blog. Convertirlo en PDF con email gate reutiliza contenido existente y captura a empresarios que llegan por esa búsqueda.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">5</div>
+          <div class="lm-content">
+            <h4>"Mini-curso por email: CFDI 4.0 en la práctica en 5 días"</h4>
+            <p>Secuencia de 5 emails que explica los cambios del CFDI 4.0 con ejemplos reales. Captura contadores en modo aprendizaje antes de que tengan urgencia activa de compra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 14: EXAMPLE PAGE -->
+  <div class="card card-white on-light">
+    <div class="container">
+      <span class="section-label">La Página de Ejemplo</span>
+      <h2>No nos limitamos a encontrar el problema</h2>
+      <p style="color: var(--body-text); margin-top: 8px; margin-bottom: 4px; font-size: 18px; font-weight: 600;">Construimos la solución.</p>
+      <p style="color: var(--body-text); margin-bottom: 24px;">Esta es una versión reconstruida de la página de captación para Despachos Contables, con el Lead Magnet 1: "Guía del Despacho Contable Digital 2026". Branding de Tablia, enfoque exclusivo en el perfil de mayor valor.</p>
+
+      <a href="https://danigdecelis.github.io/tablia-funnel/" target="_blank" class="preview-wrap">
+        <div class="preview-hero">
+          <div class="preview-badge">Guía gratuita para despachos contables</div>
+          <div class="preview-headline">Cómo los despachos que automatizan hoy están triplicando su cartera sin contratar más personal</div>
+          <div class="preview-sub">El caso real de un despacho mexicano que pasó de 25 horas a 3 horas en su cierre mensual.</div>
+          <div class="preview-stats">
+            <div class="preview-stat"><div class="num">80%</div><div class="lbl">menos tiempo cierre</div></div>
+            <div class="preview-stat"><div class="num">25h a 3h</div><div class="lbl">caso documentado</div></div>
+            <div class="preview-stat"><div class="num">99.2%</div><div class="lbl">precisión</div></div>
+          </div>
+          <div class="preview-btn-row">
+            <div class="preview-cta">Quiero la guía gratuita</div>
+          </div>
+        </div>
+        <div class="preview-bar">
+          <div class="preview-url">danigdecelis.github.io/tablia-funnel/</div>
+          <div class="preview-view">Ver página en vivo &rarr;</div>
+        </div>
+      </a>
+
+      <div class="what-changed">
+        <div class="wc-block before">
+          <h4>En lugar de:</h4>
+          <ul>
+            <li>Tráfico al blog o homepage general</li>
+            <li>CTA "Crea una cuenta" para todos los perfiles</li>
+            <li>Sin captura de email ni lead magnet</li>
+            <li>Sin historia de fundador ni prueba de resultados</li>
+          </ul>
+        </div>
+        <div class="wc-block after">
+          <h4>Creamos:</h4>
+          <ul>
+            <li>Tráfico a página dedicada para despachos</li>
+            <li>Captura de email con descarga inmediata</li>
+            <li>Caso 25h a 3h como pieza central visible</li>
+            <li>Secuencia de nurturing que convierte en demo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 15: WHAT ELSE -->
+  <div class="card card-off on-light">
+    <div class="container">
+      <span class="section-label">Qué Más Construiríamos</span>
+      <h2>El sistema completo detrás de la página</h2>
+
+      <div class="email-sequence">
+        <h4>1. Secuencia de Email Nurturing: 6 emails en 30 días</h4>
+        <div class="email-item">
+          <div class="email-num">1</div>
+          <p><strong>Entrega de la guía y bienvenida</strong> con acceso inmediato al PDF y primer punto de contacto con la marca.</p>
+        </div>
+        <div class="email-item">
+          <div class="email-num">2</div>
+          <p><strong>El coste real de seguir cerrando el mes a mano:</strong> lo que pierden mensualmente los despachos que no automatizan, con cifras concretas.</p>
+        </div>
+        <div class="email-item">
+          <div class="email-num">3</div>
+          <p><strong>Caso real 25h a 3h:</strong> el detalle de cómo lo hizo el despacho del caso de estudio, con el proceso paso a paso.</p>
+        </div>
+        <div class="email-item">
+          <div class="email-num">4</div>
+          <p><strong>"Ya tenemos un sistema":</strong> por qué el 80% de esos sistemas no está conectado con el SAT en tiempo real y qué falla en la práctica.</p>
+        </div>
+        <div class="email-item">
+          <div class="email-num">5</div>
+          <p><strong>¿Listo para probarlo?</strong> El onboarding en 5 minutos. Sin riesgo, sin tarjeta. CTA directo a prueba gratuita.</p>
+        </div>
+        <div class="email-item">
+          <div class="email-num">6</div>
+          <p><strong>Seguimiento final:</strong> qué están haciendo los despachos que ya automatizaron y qué están dejando de ganar los que no.</p>
+        </div>
+      </div>
+
+      <div class="build-grid" style="margin-top: 32px;">
+        <div class="build-item">
+          <h4>2. Landing Page Dedicada Plan Contadores</h4>
+          <ul>
+            <li>Página separada de la homepage genérica</li>
+            <li>Copy construido alrededor del ROI del despacho</li>
+            <li>Caso 25h a 3h como pieza central con nombre del despacho</li>
+            <li>CTA de demo personalizada, no registro directo</li>
+            <li>Número de despachos ya automatizados como credibilidad</li>
+          </ul>
+        </div>
+        <div class="build-item">
+          <h4>3. Activación de Autoridad de Paolo en LinkedIn</h4>
+          <ul>
+            <li>Caso 25h a 3h convertido en 3 posts con datos concretos</li>
+            <li>Perfil actualizado conectando minu con Tablia</li>
+            <li>Clip del video fintech NOW editado para LinkedIn</li>
+            <li>Artículo del fundador: "Por qué dejé una fintech de $20M para construir la herramienta que los contadores mexicanos necesitaban"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 16: GUARANTEE -->
+  <div class="card card-dark on-dark">
+    <div class="container">
+      <span class="section-label">Nuestra Oferta y Garantía</span>
+      <div class="guarantee-statement">"Tendrás tu sistema completo funcionando en 30 días y generando leads cualificados en 90. Si no lo logramos, seguimos trabajando sin cobrarte hasta que lo sea."</div>
+      <p style="color: rgba(255,255,255,0.6); margin-bottom: 32px;">Así es exactamente cómo funciona:</p>
+      <div class="guarantee-steps">
+        <div class="g-step">
+          <div class="g-num">1</div>
+          <div>
+            <div class="g-who">Ambos</div>
+            <div class="g-title">Llamada de arranque</div>
+            <p class="g-desc">Planificamos el funnel completo juntos. Arranque en 7 a 10 días hábiles.</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">2</div>
+          <div>
+            <div class="g-who">Tú</div>
+            <div class="g-title">Nos das acceso</div>
+            <p class="g-desc">Backend de la web, plataforma de email y assets de marca.</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">3</div>
+          <div>
+            <div class="g-who">Nosotros hacemos</div>
+            <div class="g-title">Página de captación para Despachos Contables</div>
+            <p class="g-desc">Ya construida y en vivo en danigdecelis.github.io/tablia-funnel/</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">4</div>
+          <div>
+            <div class="g-who">Nosotros hacemos</div>
+            <div class="g-title">Cargamos la secuencia de nurturing</div>
+            <p class="g-desc">6 emails listos en tu plataforma de email en el orden y timing correctos.</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">5</div>
+          <div>
+            <div class="g-who">Nosotros hacemos</div>
+            <div class="g-title">Landing page dedicada para el plan Contadores</div>
+            <p class="g-desc">Página separada con copy orientado al ROI del despacho y CTA de demo personalizada.</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">6</div>
+          <div>
+            <div class="g-who">Nosotros hacemos</div>
+            <div class="g-title">Activación de la autoridad de Paolo en LinkedIn</div>
+            <p class="g-desc">3 posts con el caso real, clip del video editado, perfil actualizado para conectar minu con Tablia.</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">7</div>
+          <div>
+            <div class="g-who">Nosotros hacemos</div>
+            <div class="g-title">Entregamos todo listo para lanzar</div>
+            <p class="g-desc">Cero trabajo extra de tu parte. Si no generamos leads cualificados en 90 días, seguimos trabajando sin cobrarte.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 17: CTA -->
+  <div class="card card-dark cta-section on-dark">
+    <div class="container">
+      <span class="section-label">Siguiente paso</span>
+      <h2>¿Listo para avanzar?</h2>
+      <p class="cta-sub">La página de captación ya está construida y es tuya. Cuéntame qué te parece y arrancamos.</p>
+      <div class="cta-options">
+        <div class="cta-email-block">
+          📧 <strong>Responde directamente a este mensaje</strong><br>
+          <span>y arrancamos la conversación de inmediato.</span>
+        </div>
+        <div class="cta-or">O</div>
+        <button class="btn-calendly" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">
+          📅 Reserva una llamada
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 18: FAQS -->
+  <div class="card card-off on-light">
+    <div class="container">
+      <span class="section-label">Preguntas Frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">¿Es todo hecho para mí?</div>
+          <p class="faq-a">Sí. Nos encargamos de todo desde la construcción hasta el lanzamiento. Tú revisas, apruebas y salimos en vivo. Cero trabajo técnico de tu parte.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Qué incluye el engagement completo?</div>
+          <p class="faq-a">La página de captación para despachos (ya construida y en vivo), la secuencia de 6 emails de nurturing cargada en tu plataforma, la landing page dedicada para el plan Contadores, y la activación de la autoridad de Paolo en LinkedIn con 3 posts y el clip de video.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Cuánto tiempo lleva arrancar?</div>
+          <p class="faq-a">Arranque en 7 a 10 días hábiles desde nuestra primera llamada.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Qué necesitan de nosotros?</div>
+          <p class="faq-a">Acceso al backend de la web, a tu plataforma de email y a los assets de marca. Nada más.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Cuánto cuesta?</div>
+          <p class="faq-a">Hablamos de la inversión en la llamada. La página de captación ya está construida y es tuya independientemente del resultado de esa conversación.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Cuál es la garantía?</div>
+          <p class="faq-a">Tendrás tu sistema completo funcionando en 30 días y generando leads cualificados en 90. Si no lo logramos, seguimos trabajando sin cobrarte hasta que lo sea.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 19: ABOUT -->
+  <div class="card card-white on-light">
+    <div class="container">
+      <span class="section-label">Sobre Daniel</span>
+      <h2>Daniel Garcia de Celis</h2>
+      <div class="about-card">
+        <img src="https://danigdecelis.github.io/factor-rh-strategy/daniel-photo.png" alt="Daniel Garcia de Celis">
+        <div>
+          <div class="about-name">Daniel Garcia de Celis</div>
+          <div class="about-title">Fundador, Copy Estratega</div>
+          <p class="about-bio">Copy Estratega trabaja con consultores y expertos que ya tienen la metodologia, los resultados y la autoridad, pero todavia no tienen el sistema digital que convierte eso en clientes nuevos de forma predecible. Construimos el sistema completo: página de captación, lead magnet, secuencia de nurturing y contenido de autoridad. Todo hecho para ti, todo listo para lanzar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 20: FINAL CTA -->
+  <div class="card card-dark cta-section on-dark">
+    <div class="container">
+      <span class="section-label">Hablemos</span>
+      <h2>Hablemos esta semana</h2>
+      <p class="cta-sub">La página ya está construida. El siguiente paso es una llamada de 30 minutos para planificar el sistema completo.</p>
+      <div class="cta-options">
+        <div class="cta-email-block">
+          📧 <strong>Responde a este mensaje</strong><br>
+          <span>y arrancamos de inmediato.</span>
+        </div>
+        <div class="cta-or">O</div>
+        <button class="btn-calendly" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">
+          📅 Reservar llamada
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega">
+    <p>2026 Copy Estratega. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
